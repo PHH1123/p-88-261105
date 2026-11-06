@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       owner_lc: ${{ steps.export_owner.outputs.owner_lc }}
-      image_name: ${{ steps.export_owner.outpus.image_name }}
+      image_name: ${{ steps.export_owner.outputs.image_name }}
     steps:
       - uses: actions/checkout@v4
       - name: private_html 생성
